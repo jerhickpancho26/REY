@@ -1,0 +1,174 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:#16201a;
+  color:rgb(105, 113, 146);
+  line-height:1.6;
+}
+
+/* NAV */
+header{
+  position:fixed;
+  width:100%;
+  background:#141d21;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 10%;
+  z-index:1000;
+}
+
+.logo{
+  color:#222924;
+}
+
+nav a{
+  color:rgb(9, 97, 73);
+  margin-left:20px;
+  text-decoration:none;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#2b282a;
+}
+main{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.hero{
+text-align:center;
+margin-bottom:50px;
+}
+.profile{
+width:200px;
+height:200px;
+border-radius:50%;
+border:3px solid rgb(59, 7, 64);
+margin-bottom:15px;
+}
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero span{
+  color:#282e31;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:12px 24px;
+  border:none;
+  background:#1d2021;
+  color:rgb(106, 102, 124);
+  cursor:pointer;
+  border-radius:30px;
+  transition:.3s;
+}
+
+.hero button:hover{
+  background:rgb(8, 73, 85);
+}
+
+/* SECTIONS */
+section{
+  padding:100px 10%;
+  text-align:center;
+}
+
+h2{
+  margin-bottom:30px;
+  color:#131718;
+}
+
+/* PROJECT CARDS */
+
+.card img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+}
+.cards{
+  display:table;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+
+}
+
+.card{
+  background:#222525;
+  padding:25px;
+  width:260px;
+  border-radius:15px;
+  transition:.4s;
+  box-shadow:0 0 0 transparent;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.03);
+  box-shadow:0 0 25px #161616;
+}
+/* SIDEBAR */
+.sidebar{
+width:240px;
+padding:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+.sidebar a{
+text-decoration:none;
+color:rgb(86, 93, 101);
+padding:10px;
+border-radius:10px;
+transition:.3s;
+}
+.sidebar a:hover{
+background:#141515;
+color:rgb(7, 54, 81);
+}
+/* CONTACT */
+.contact p{
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#1d1e1f;
+  margin-top:40px;
+}
+
+/* SCROLL ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all .8s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+  }
+}

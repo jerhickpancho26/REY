@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REY MONTILLA | Portfolio</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="app"></div>
+<!-- NAVBAR -->
+ <nav>
+ <aside class="sidebar glass">
+  <h1 class="logo">PORTFOLIO</h1>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </aside>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <img src="REY.jpg" class="profile">
+  <h1>Hi, I'm <span>REY MONTILLA JR.</span></h1>
+  <p>A passionate Computer Science student</p>
+  <button onclick="scrollToSection('projects')">View Projects</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="hero">
+  <h2>About Me</h2>
+  <p><b>
+    I enjoy learning new things about computers and technology. <p>I believe that hard work and patience are important in reaching my goals.<p>In the future, I hope to own a computer shop where I can help people with their tech needs. <p>I keep learning and improving myself step by step.
+  </p></b>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="sidebar">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card"><img src="luto.jpg" onclick="openModal(this.src)"><b>Multimedia system</b><dd>This image shows a cooking mini-vlog about preparing sinabawang isda (fish soup). The ingredients such as fish, ginger, pechay, and seasonings are neatly arranged on a table, with text overlays introducing the dish. The video was edited using Filmora, showing basic multimedia elements like visuals, text, and layout for a simple cooking tutorial vlog. The project demonstrates how multimedia tools can be used to create engaging and informative content for viewers.</dd></div>
+    <div class="card"><img src="palasyou.jpg" onclick="openModal(this.src)"><b>Programming</b><dd>Successful final defense of the project "Heap Sort vs Quick Sort". This milestone marks the culmination of weeks or months of research, coding, and analysis focused on comparing these two fundamental sorting algorithms. The team thoroughly presented their findings on efficiency, implementation differences, and practical use cases for each method. Their hard work paid off with positive feedback from the panel of evaluators.</dd></div>
+    <div class="card"><img src="Robot.jpg" onclick="openModal(this.src)"><b>embedded</b><dd>This image showcases an assembled Hosyond 2WD Smart Robot Car Kit, submitted as a final project for Embedded Systems, Highlights key features like infrared control, C-language programming support, and obstacle avoidance capabilities. The built robot includes a microcontroller board with neatly routed colorful wiring, front-mounted infrared sensors, an ultrasonic module for distance detection, and is paired with an infrared remote control for manual operation. A pair of scissors rests on the kit box, indicating assembly work was recently completed.</dd></div>
+    <div class="card"><img src="art.jpg" onclick="openModal(this.src)"><b>art app</b><dd>This image shows my final project in Contemporary World from North Eastern Mindanao State University. It presents a side-by-side comparison of a classical artwork titled “Study of a Young Man” and my recreated photograph titled “Silent Focus.” Both images feature a young man in a similar pose, highlighting expression, posture, and lighting. The project demonstrates how traditional art can be reinterpreted in a modern context, showing the connection between classical influences and contemporary creativity.</dd></div>
+    <div class="card"><img src="pathfit.jpg" onclick="openModal(this.src)"><b>pathfit</b><dd>This photo captures our class after completing our P.E. final project, where we chose to perform a dance instead of taking a traditional exam. The image reflects our energy, cooperation, and the strong bond we built while preparing and performing our routine.Through this activity, we were able to express creativity, improve our coordination, and build stronger friendships. It was not just a performance, but also a memorable experience that strengthened our unity and confidence as a class.</dd></div>
+    <div class="card"><img src="palay.jpg" onclick="openModal(this.src)"><b>Entrepreuership</b><dd>This image shows our final Entrepreneurial mind project pitch titled “PALAYSCAN” with the tagline “Scan It Right, Harvest Bright.” The presentation introduces our team (BSCS–2A) and features our product logo, which represents agriculture and innovation. PALAYSCAN is a concept designed to help farmers improve rice production through smart scanning technology. The slides highlight key themes such as farmers’ hard work and the issue of scarcity, emphasizing how our project aims to support agricultural productivity and address food supply challenges</dd></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="hero">
+  <h2>Contact Me</h2>
+  <p>Email:ewayrey470@gmail.com</p>
+  <p>facebook: Rey Montilla</p>
+  <p>Instagram : ar_e_way</p>
+  <p>number: 09490397043</p>
+</section>
+
+<footer>
+  <p>© 2026 Rey Montilla jr | Portfolio</p>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
